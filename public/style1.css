@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Container */
+form {
+    background: #fff;
+    padding: 30px;
+    max-width: 420px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+input {
+    width: 85%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+input:focus {
+    background: #e9ecef;
+}
+
+/* Buttons */
+button {
+    width: 90%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Green Button (Create Account) */
+button[type="submit"] {
+    background: #28a745;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.2);
+}
+
+button[type="submit"]:hover {
+    background: #218838;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(40, 167, 69, 0.3);
+}
+
+/* Blue Button (Fingerprint Scan) */
+button:first-of-type {
+    background: #007bff;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+button:first-of-type:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* Hover Effects for Buttons */
+button:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Response Message */
+p {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to right, #74ebd5, #acb6e5);
+    }
+    50% {
+        background: linear-gradient(to right, #ff9a8b, #ff6a88);
+    }
+    100% {
+        background: linear-gradient(to right, #74ebd5, #acb6e5);
+    }
+}
+
+body {
+    animation: gradientAnimation 8s ease infinite;
+}
+
+/* Border Animation for Input Fields */
+input:focus {
+    border: 2px solid #007bff;
+    transition: border 0.3s ease;
+}
+
+/* Spacing for better alignment */
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}

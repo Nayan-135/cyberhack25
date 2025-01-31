@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Title */
+h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Card Container */
+.container {
+    background: #fff;
+    padding: 40px 50px;
+    max-width: 450px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 14px;
+    margin: 14px 0;
+    border: none;
+    border-radius: 8px;
+    background: #f4f6f9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    background-color: #e9f0fb;
+    border: 2px solid #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+button {
+    width: 90%;
+    padding: 16px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Blue Button (Verify User) */
+button:last-of-type {
+    background: #007bff;
+    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.15);
+}
+
+button:last-of-type:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.2);
+}
+
+/* Green Button (Fingerprint Scan) */
+button:first-of-type {
+    background: #28a745;
+    box-shadow: 0px 4px 12px rgba(40, 167, 69, 0.15);
+}
+
+button:first-of-type:hover {
+    background: #218838;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.2);
+}
+
+/* Button Hover Effects */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Verification Message */
+p {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4);
+    }
+    50% {
+        background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    }
+    100% {
+        background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eae4);
+    }
+}
+
+body {
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Spacing and Alignment */
+.container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    min-height: 90vh;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Account Creation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h2>Create Your Bank Account</h2>
+    <form id="accountForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="text" id="accountType" placeholder="Account Type" required>
+        <input type="number" id="limit" placeholder="Limit" required>
+        <button type="button" onclick="scanFingerprint()">Scan Fingerprint</button>
+        <input type="hidden" id="fingerprintData">
+        <button type="submit">Create Account</button>
+    </form>
+    <p id="responseMessage"></p>
+
+    <script src="script1.js"></script>
+</body>
+</html>
